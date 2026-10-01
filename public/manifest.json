@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "Currio — Instant Currency Conversion",
+  "short_name": "Currio",
+  "version": "1.0.0",
+  "description": "Select. Convert. Done. Highlight any price on a webpage to see it in your currency instantly.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "Currio",
+    "default_popup": "popup/index.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "permissions": ["storage", "contextMenus", "scripting", "activeTab", "alarms"],
+  "commands": {
+    "convert-selection": {
+      "suggested_key": {
+        "default": "Alt+Shift+C",
+        "mac": "Alt+Shift+C"
+      },
+      "description": "Convert the selected price"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; base-uri 'none'; frame-ancestors 'none'"
+  },
+  "minimum_chrome_version": "116"
+}
