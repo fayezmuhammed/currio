@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Currio</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAFdElEQVR42u1dMagTQRDdfpvUVqmt0tqltExnG7jCSrhK2zQ21xzCb2zEQvhlEMFGJCD8TvyIjdgEfycI+Y1gd/I+Gwghibm7vd3Z2TcwICb/cjfzdnfmzeyeMYHFVsXUVkVpq6K2VbFy2mSq2+evnU2mRpvYqhi7h1tm7Oi2unQ2G6fs+Hnmo9vnLDFPxekjWxULWxUbOs67bpxtR1KdT8cHBIIkxyOoW9MxwXUdNWh0031NR0TXOviyYKtiYqvimsYXo/DFJJTzZ1zrxcYGsxCpHY0tW+d0PnVO51PnPtd8GjRNnfmI9hnwpR0YTvrk+Uz1dKSIoy4AIMmjiCzqQu/ScLp02gYA5PYV1g7aVPVoMJ26OCfwY9SvOysYcfRzFjgKAI7+DGYB0r3U+SEAsIEzo0bTQ63bNExeOt4FQEmDZKflLgC4aSPDzSe7AFD9sA8vq+bx+1fN86u3zZtvV82nm+8HFZ/hO/gu/ka7XdTy/o+WF83F5w/N1183TV/BNXAtXFNlfUDL+o8RixF8+/dPM5Tg2vgNRbNDmXzZF9P1z9vfTWjBb+K3ky8Tp5r/x3K8MiCskgMApl8fa7tvwT0luDSskskA7r14cheMSRfcI+41mUwghZt88HohctSfmg1wzwSAp7V+yMh+yIwhhdjASHd+6iIdBGIBgHxbi+BZCIBMnS8dBIbTft7LgcnV+YjUt0WgUBmGxHqCkZTqDRXtv/vxpXn68fKOqDmVo+MzfAffxd8MwRpK4wiMFJLH9yjcUrR9DI6/9U05S1sGRADAJ8M3FDfvCwiYWQiAPW7fF/GCZo6h7xe/0WepQsxBAOyor6aNkNRrH2qaAPAc9cOgMQKrrnELljsCwGnfNTU2udJl+ZJWMjapjn4pU2mbdFFaABgVAH1GP6ZeKfn0uUuBpHuODoA+kT8icGm1djj2VP0Cn0ltEokCgD7FnhCpXle9//LZHYuIe4Ti3/g/loP3tGsejWWDO3oSBwAKIlqbKwiAAWlfjn4lAOjKoHH0KwFAV0mp1foYfbwNDiUFiCaF9E8igdLmmU9xHrFTxKAA6Mr+YbSkun3t3PgmFrcRFACY+rpIirtx22Y7sbqFTAoEUGrrP+63C9cRg+QKCgAUcLqI1qn/EM1NABwooqQGgD5Ud+jlTjwApHXQDDnTxeA7CAACgEsAlwAGgQwCmQYyDSQRRCKIVDCpYBaDWAxiOZjlYDaEsCGELWEEAJtCCQC2hRMA3BjCjSHcGsatYdwcys2h3B7O7eE8IIIHRPCIGB4Rw0OieEgUj4njMXHR6WEeFKkEADwqNnMAWB4WTQBYHhdPAFi+MIIAsHxlDAFg+dIoAsDytXEEgOWLIwkAy1fHEgCWL48eFAB8fbynUZ/q6+NXid20V25eau0hJADqlLtaYwEhccdvtQYASg3tzZh+kW8PmTHg2viNFHcrH9ESAJhq63UH545gzFezCa4lkcf3oFMD0b75ASMW0zWaOTCCt0WgfcVn+A6+q2iUH88AtmKrYsldMtnpchcAJQ2SnZa7ABjTINnp2OxKqnwAtWP+vy+2KuY0TDY6N4fEVsWGxlGvG3NMbFUsaCD1ujgFgBFnAd2jHz42p4SzQKajfw8EaxpLna7NuaKxPkB1vH8LENQ0mhqtTVtxAeE1jZe8Xv838DsBggmzguSj/onpI7YqZjRksjozPoQ0sSK6lyCg8wkCOr93TMDAUGbANzMhxGUHTBFlpXoTE1IcT0CySADJ0znP9wSEKWsHcbj91vTuwEBYMDYIttYvjERxywKBMKDjo073HVJGNpp6aOAcPLUbGAhjt++Am09abNpwNhsbbeKCxtJFr6vMZ4nt89fOJsGDun+BwdNaX3HAWAAAAABJRU5ErkJggg==">
+<meta name="description" content="Highlight any price on any webpage and see it in your currency.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:ital,opsz,wght@1,6..72,400&family=Hanken+Grotesk:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: single screen — headline left, live demo right; one quiet steps row below. Light only. */
+:root {
+  --bg: #F7F8F7;
+  --surface: #FFFFFF;
+  --ink: #141A18;
+  --muted: #69736F;
+  --line: #E2E6E4;
+  --accent: #17795E;
+  --accent-soft: #DDF0E8;
+
+  --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --body: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg); color: var(--ink);
+  font: 400 17px/1.6 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1040px; margin: 0 auto; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+nav { display: flex; justify-content: space-between; align-items: center; padding-block: 28px; }
+.logo { display: flex; align-items: center; gap: 10px; font: 700 20px/1 var(--display); letter-spacing: -0.02em; text-decoration: none; }
+.mark { width: 28px; height: 28px; display: block; }
+.nav-link { font-size: 15px; color: var(--muted); text-decoration: none; }
+.nav-link:hover { color: var(--ink); }
+
+.hero { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; padding-block: 56px 72px; }
+.copy { display: grid; gap: 24px; justify-items: start; min-width: 0; }
+.eyebrow { font: 500 12px/1 var(--mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+h1 { font: 700 clamp(44px, 6.4vw, 76px)/1.0 var(--display); letter-spacing: -0.035em; margin: 0; text-wrap: balance; }
+h1 em { font: italic 400 1.02em/1 var(--serif); letter-spacing: -0.01em; color: var(--accent); }
+.lede { font-size: 19px; color: var(--muted); max-width: 38ch; margin: 0; }
+.btn { display: inline-flex; padding: 14px 24px; border-radius: 999px; background: var(--ink); color: var(--bg); font: 500 16px/1 var(--body); text-decoration: none; transition: transform .15s ease; }
+.btn:hover { transform: translateY(-1px); }
+.fine { font-size: 13px; color: var(--muted); margin: -12px 0 0; }
+
+.demo { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; overflow: visible; min-width: 0; }
+.chrome { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--line); }
+.dots { display: flex; gap: 6px; }
+.dots i { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
+.url { flex: 1; min-width: 0; font: 400 13px/1 var(--mono); color: var(--muted); background: var(--bg); padding: 8px 12px; border-radius: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.shop { padding: 24px 24px 28px; display: grid; gap: 12px; }
+.hint { font: 400 13px/1.4 var(--mono); color: var(--muted); }
+.item { padding: 16px 18px; border-radius: 12px; background: var(--bg); display: flex; justify-content: space-between; align-items: center; gap: 12px; position: relative; flex-wrap: wrap; }
+.item-name { font-size: 15px; color: var(--muted); }
+.price { font: 500 19px/1.3 var(--mono); color: var(--ink); background: none; border: 0; padding: 0 3px; cursor: text; border-radius: 3px; transition: background .15s ease; }
+.price:hover { background: var(--accent-soft); }
+.price[aria-pressed="true"] { background: var(--accent); color: var(--bg); }
+/* Conversion card: ported 1:1 from src/content/card-styles.ts */
+.cc {
+  --c-bg: #ffffff; --c-fg: #0d1117; --c-muted: #5b6573; --c-subtle: #8b94a1;
+  --c-line: rgba(13, 17, 23, 0.08); --c-hover: rgba(13, 17, 23, 0.05);
+  --c-accent: #0b8a63; --c-accent-soft: rgba(11, 138, 99, 0.1);
+  position: absolute; right: 8px; top: calc(100% + 6px); z-index: 3;
+  box-sizing: border-box; width: max-content; min-width: 216px; max-width: min(320px, calc(100vw - 40px));
+  padding: 12px 12px 10px 14px; border-radius: 14px;
+  border: 1px solid var(--c-line); background: var(--c-bg); color: var(--c-fg);
+  box-shadow: 0 1px 2px rgba(13, 17, 23, 0.06), 0 12px 32px -8px rgba(13, 17, 23, 0.22);
+  font: 400 13px/1.35 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Text", "Segoe UI", Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-variant-numeric: tabular-nums; -webkit-font-smoothing: antialiased; letter-spacing: -0.005em;
+  text-align: left; cursor: default; user-select: none;
+  animation: cc-in 160ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+@keyframes cc-in { from { opacity: 0; transform: translateY(4px) scale(0.985); } to { opacity: 1; transform: none; } }
+.cc .row { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.cc .source { color: var(--c-muted); font-size: 12.5px; }
+.cc .source-text { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cc .spacer { flex: 1 1 auto; }
+.cc .brand { flex: none; opacity: 0.9; }
+.cc .brand-bg { fill: var(--c-accent); }
+.cc .flag { flex: none; width: 18px; text-align: center; font-size: 14px; line-height: 1; }
+.cc .result { margin-top: 6px; }
+.cc .approx { color: var(--c-subtle); font-size: 16px; font-weight: 500; margin-right: -3px; }
+.cc .value { font-size: 21px; font-weight: 650; letter-spacing: -0.02em; line-height: 1.15; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cc .code { color: var(--c-muted); font-size: 12px; font-weight: 600; letter-spacing: 0.02em; margin-top: 4px; }
+.cc .icon-btn { all: unset; box-sizing: border-box; flex: none; display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: 8px; color: var(--c-subtle); cursor: pointer; transition: background 120ms, color 120ms; }
+.cc .icon-btn:hover { background: var(--c-hover); color: var(--c-fg); }
+.cc .icon-btn:focus-visible, .cc .code-btn:focus-visible, .cc .chip:focus-visible { outline: 2px solid var(--c-accent); outline-offset: 1px; }
+.cc .icon-btn[data-done="true"] { color: var(--c-accent); }
+.cc .code-btn { all: unset; box-sizing: border-box; display: inline-flex; align-items: center; gap: 2px; padding: 1px 4px 1px 6px; margin-left: -2px; border-radius: 6px; color: var(--c-muted); font-weight: 600; font-size: 11.5px; cursor: pointer; background: var(--c-hover); }
+.cc .code-btn:hover { color: var(--c-fg); }
+.cc .code-btn[aria-expanded="true"] svg { transform: rotate(180deg); }
+.cc .alternatives { margin-top: 8px; flex-wrap: wrap; gap: 4px; }
+.cc .alt-label { color: var(--c-subtle); font-size: 11.5px; margin-right: 2px; }
+.cc .chip { all: unset; box-sizing: border-box; cursor: pointer; padding: 3px 7px; border-radius: 999px; border: 1px solid var(--c-line); color: var(--c-muted); font-size: 11.5px; font-weight: 600; }
+.cc .chip:hover { color: var(--c-fg); background: var(--c-hover); }
+.cc .meta { margin-top: 9px; padding-top: 8px; border-top: 1px solid var(--c-line); color: var(--c-subtle); font-size: 11.5px; line-height: 1.45; }
+.cc .meta-rate { color: var(--c-muted); font-weight: 500; }
+.target { display: flex; align-items: center; gap: 10px; margin-top: 8px; font-size: 14px; color: var(--muted); }
+.target select { font: 500 14px/1 var(--mono); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; list-style: none; padding: 0; margin: 0; counter-reset: step; }
+.steps li { counter-increment: step; border-top: 1px solid var(--line); padding-top: 16px; display: grid; gap: 4px; }
+.steps li::before { content: counter(step); font: 500 12px/1 var(--mono); color: var(--accent); }
+.steps b { font: 700 19px/1.2 var(--display); letter-spacing: -0.02em; }
+.steps span { color: var(--muted); font-size: 15px; }
+
+footer { margin-top: 72px; border-top: 1px solid var(--line); padding-block: 24px 36px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px; color: var(--muted); }
+footer a { text-decoration: none; }
+footer a:hover { color: var(--ink); }
+
+@media (max-width: 760px) {
+  .hero { grid-template-columns: 1fr; gap: 40px; padding-block: 24px 56px; }
+  .steps { grid-template-columns: 1fr; gap: 20px; }
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="logo" href="#top"><img class="mark" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAFdElEQVR42u1dMagTQRDdfpvUVqmt0tqltExnG7jCSrhK2zQ21xzCb2zEQvhlEMFGJCD8TvyIjdgEfycI+Y1gd/I+Gwghibm7vd3Z2TcwICb/cjfzdnfmzeyeMYHFVsXUVkVpq6K2VbFy2mSq2+evnU2mRpvYqhi7h1tm7Oi2unQ2G6fs+Hnmo9vnLDFPxekjWxULWxUbOs67bpxtR1KdT8cHBIIkxyOoW9MxwXUdNWh0031NR0TXOviyYKtiYqvimsYXo/DFJJTzZ1zrxcYGsxCpHY0tW+d0PnVO51PnPtd8GjRNnfmI9hnwpR0YTvrk+Uz1dKSIoy4AIMmjiCzqQu/ScLp02gYA5PYV1g7aVPVoMJ26OCfwY9SvOysYcfRzFjgKAI7+DGYB0r3U+SEAsIEzo0bTQ63bNExeOt4FQEmDZKflLgC4aSPDzSe7AFD9sA8vq+bx+1fN86u3zZtvV82nm+8HFZ/hO/gu/ka7XdTy/o+WF83F5w/N1183TV/BNXAtXFNlfUDL+o8RixF8+/dPM5Tg2vgNRbNDmXzZF9P1z9vfTWjBb+K3ky8Tp5r/x3K8MiCskgMApl8fa7tvwT0luDSskskA7r14cheMSRfcI+41mUwghZt88HohctSfmg1wzwSAp7V+yMh+yIwhhdjASHd+6iIdBGIBgHxbi+BZCIBMnS8dBIbTft7LgcnV+YjUt0WgUBmGxHqCkZTqDRXtv/vxpXn68fKOqDmVo+MzfAffxd8MwRpK4wiMFJLH9yjcUrR9DI6/9U05S1sGRADAJ8M3FDfvCwiYWQiAPW7fF/GCZo6h7xe/0WepQsxBAOyor6aNkNRrH2qaAPAc9cOgMQKrrnELljsCwGnfNTU2udJl+ZJWMjapjn4pU2mbdFFaABgVAH1GP6ZeKfn0uUuBpHuODoA+kT8icGm1djj2VP0Cn0ltEokCgD7FnhCpXle9//LZHYuIe4Ti3/g/loP3tGsejWWDO3oSBwAKIlqbKwiAAWlfjn4lAOjKoHH0KwFAV0mp1foYfbwNDiUFiCaF9E8igdLmmU9xHrFTxKAA6Mr+YbSkun3t3PgmFrcRFACY+rpIirtx22Y7sbqFTAoEUGrrP+63C9cRg+QKCgAUcLqI1qn/EM1NABwooqQGgD5Ud+jlTjwApHXQDDnTxeA7CAACgEsAlwAGgQwCmQYyDSQRRCKIVDCpYBaDWAxiOZjlYDaEsCGELWEEAJtCCQC2hRMA3BjCjSHcGsatYdwcys2h3B7O7eE8IIIHRPCIGB4Rw0OieEgUj4njMXHR6WEeFKkEADwqNnMAWB4WTQBYHhdPAFi+MIIAsHxlDAFg+dIoAsDytXEEgOWLIwkAy1fHEgCWL48eFAB8fbynUZ/q6+NXid20V25eau0hJADqlLtaYwEhccdvtQYASg3tzZh+kW8PmTHg2viNFHcrH9ESAJhq63UH545gzFezCa4lkcf3oFMD0b75ASMW0zWaOTCCt0WgfcVn+A6+q2iUH88AtmKrYsldMtnpchcAJQ2SnZa7ABjTINnp2OxKqnwAtWP+vy+2KuY0TDY6N4fEVsWGxlGvG3NMbFUsaCD1ujgFgBFnAd2jHz42p4SzQKajfw8EaxpLna7NuaKxPkB1vH8LENQ0mhqtTVtxAeE1jZe8Xv838DsBggmzguSj/onpI7YqZjRksjozPoQ0sSK6lyCg8wkCOr93TMDAUGbANzMhxGUHTBFlpXoTE1IcT0CySADJ0znP9wSEKWsHcbj91vTuwEBYMDYIttYvjERxywKBMKDjo073HVJGNpp6aOAcPLUbGAhjt++Am09abNpwNhsbbeKCxtJFr6vMZ4nt89fOJsGDun+BwdNaX3HAWAAAAABJRU5ErkJggg==" alt="" width="28" height="28">Currio</a>
+    <a class="nav-link" href="https://github.com/fayezmuhammed/currio">GitHub</a>
+  </nav>
+
+  <main class="hero" id="top">
+    <div class="copy">
+      <span class="eyebrow">Chrome extension · Free</span>
+      <h1>Select. Convert. <em>Done.</em></h1>
+      <p class="lede">Highlight any price on any webpage and see it in your currency instantly.</p>
+      <a class="btn" href="https://github.com/fayezmuhammed/currio/releases/latest">Download for Chrome</a>
+      <p class="fine">No tracking. Page content never leaves your browser.</p>
+    </div>
+
+    <div class="demo" aria-label="Interactive demo">
+      <div class="chrome">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <div class="url">souq-example.ae/electronics</div>
+      </div>
+      <div class="shop">
+        <div class="hint">Try it: click a price.</div>
+        <div id="items" style="display:grid;gap:12px"></div>
+        <label class="target" for="to">Your currency
+          <select id="to">
+            <option value="USD">USD</option>
+            <option value="EUR" selected>EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="INR">INR</option>
+            <option value="JPY">JPY</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </main>
+
+  <ol class="steps">
+    <li><b>Select</b><span>Highlight a price on any site.</span></li>
+    <li><b>Convert</b><span>Currio detects the currency and converts it.</span></li>
+    <li><b>Done</b><span>The result appears next to your selection.</span></li>
+  </ol>
+
+  <footer>
+    <span>Currio · Instant currency conversion</span>
+    <span><a href="https://github.com/fayezmuhammed/currio/blob/main/PRIVACY.md">Privacy</a> · <a href="https://github.com/fayezmuhammed/currio">Source</a></span>
+  </footer>
+</div>
+
+<script>
+  // Example rates: units per 1 USD (illustrative only)
+  const RATES = { USD: 1, EUR: 0.92, GBP: 0.79, INR: 83.2, JPY: 149.5, AED: 3.6725, CAD: 1.37, AUD: 1.52 };
+  const CUR = {
+    USD: { flag: "\u{1F1FA}\u{1F1F8}", minor: 2 }, EUR: { flag: "\u{1F1EA}\u{1F1FA}", minor: 2 },
+    GBP: { flag: "\u{1F1EC}\u{1F1E7}", minor: 2 }, INR: { flag: "\u{1F1EE}\u{1F1F3}", minor: 2 },
+    JPY: { flag: "\u{1F1EF}\u{1F1F5}", minor: 0 }, AED: { flag: "\u{1F1E6}\u{1F1EA}", minor: 2 },
+    CAD: { flag: "\u{1F1E8}\u{1F1E6}", minor: 2 }, AUD: { flag: "\u{1F1E6}\u{1F1FA}", minor: 2 },
+  };
+  const ITEMS = [
+    { name: "Wireless headphones", text: "AED 850", amt: 850, cur: "AED" },
+    { name: "13-inch laptop", text: "$1,299.99", amt: 1299.99, cur: "USD", alts: ["CAD", "AUD"] },
+    { name: "Coffee grinder", text: "£45", amt: 45, cur: "GBP" },
+  ];
+  const SVG = "http://www.w3.org/2000/svg";
+  const itemsEl = document.getElementById("items");
+  const toEl = document.getElementById("to");
+  let active = 0, altsOpen = false;
+
+  function h(tag, cls, ...kids) {
+    const el = document.createElement(tag);
+    if (cls) el.className = cls;
+    for (const k of kids) if (k != null) el.append(k);
+    return el;
+  }
+  function svg(paths, size, extra) {
+    const s = document.createElementNS(SVG, "svg");
+    s.setAttribute("viewBox", "0 0 24 24"); s.setAttribute("width", size); s.setAttribute("height", size);
+    s.setAttribute("fill", "none"); s.setAttribute("stroke", "currentColor"); s.setAttribute("stroke-width", "2");
+    s.setAttribute("stroke-linecap", "round"); s.setAttribute("stroke-linejoin", "round"); s.setAttribute("aria-hidden", "true");
+    for (const d of paths) { const p = document.createElementNS(SVG, "path"); p.setAttribute("d", d); s.append(p); }
+    return s;
+  }
+  function brandMark(size) {
+    const s = document.createElementNS(SVG, "svg");
+    s.setAttribute("viewBox", "0 0 32 32"); s.setAttribute("width", size); s.setAttribute("height", size);
+    s.setAttribute("class", "brand"); s.setAttribute("aria-hidden", "true");
+    s.innerHTML = '<rect width="32" height="32" rx="9" class="brand-bg"/><path d="M21.5 11.2A7.5 7.5 0 1 0 21.5 20.8" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/><circle cx="23.2" cy="16" r="1.9" fill="#fff"/>';
+    return s;
+  }
+  const COPY = ["M8 8h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2z", "M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"];
+  const CHECK = ["M5 12.5l4.5 4.5L19 7.5"];
+  const CHEVRON = ["M7 10l5 5 5-5"];
+
+  function money(v, cur, digits) {
+    const parts = new Intl.NumberFormat("en-US", { style: "currency", currency: cur, currencyDisplay: "narrowSymbol",
+      minimumFractionDigits: digits, maximumFractionDigits: digits }).formatToParts(v);
+    const sym = (parts.find((p) => p.type === "currency") || {}).value;
+    return { text: parts.map((p) => p.value).join(""), symbolIsCode: sym === cur };
+  }
+  function rateText(r, cur) {
+    return new Intl.NumberFormat("en-US", { style: "currency", currency: cur, currencyDisplay: "narrowSymbol", maximumSignificantDigits: 4 }).format(r);
+  }
+
+  function buildCard(it, to) {
+    const from = it.cur;
+    const rate = RATES[to] / RATES[from];
+    const converted = it.amt * rate;
+    const src = money(it.amt, from, Number.isInteger(it.amt) ? 0 : CUR[from].minor);
+
+    let code = null;
+    if (it.alts) {
+      code = h("button", "code-btn", from, svg(CHEVRON, 12));
+      code.type = "button"; code.setAttribute("aria-expanded", String(altsOpen));
+      code.addEventListener("click", (e) => { e.stopPropagation(); altsOpen = !altsOpen; render(); });
+    } else if (!src.symbolIsCode) code = h("span", null, from);
+
+    const nodes = [h("div", "row source", h("span", "flag", CUR[from].flag), h("span", "source-text", src.text), code, h("span", "spacer"), brandMark(16))];
+
+    if (altsOpen && it.alts) {
+      const row = h("div", "row alternatives", h("span", "alt-label", "Or"));
+      for (const c of [it.base || "USD", ...it.alts].filter((c) => c !== from)) {
+        const chip = h("button", "chip", c); chip.type = "button";
+        chip.addEventListener("click", (e) => { e.stopPropagation(); it.base = it.base || "USD"; it.cur = c; altsOpen = false; render(); });
+        row.append(chip);
+      }
+      nodes.push(row);
+    }
+
+    const out = money(converted, to, CUR[to].minor);
+    const copy = h("button", "icon-btn", svg(COPY, 14));
+    copy.type = "button"; copy.title = "Copy"; copy.setAttribute("aria-label", "Copy " + out.text);
+    copy.addEventListener("click", (e) => {
+      e.stopPropagation();
+      navigator.clipboard?.writeText(out.text).then(() => { copy.dataset.done = "true"; copy.replaceChildren(svg(CHECK, 14)); }, () => {});
+    });
+    nodes.push(h("div", "row result", h("span", "flag", CUR[to].flag), h("span", "approx", "\u2248"),
+      h("span", "value", out.text), out.symbolIsCode ? null : h("span", "code", to), h("span", "spacer"), copy));
+
+    nodes.push(h("div", "meta", h("div", "meta-rate", "1 " + from + " = " + rateText(rate, to)), h("div", null, "Example rate")));
+
+    const card = h("div", "cc", ...nodes);
+    card.setAttribute("role", "status"); card.setAttribute("aria-label", "Currio conversion");
+    return card;
+  }
+
+  function render() {
+    const to = toEl.value;
+    itemsEl.innerHTML = "";
+    ITEMS.forEach((it, i) => {
+      const card = h("div", "item", h("span", "item-name", it.name));
+      const btn = h("button", "price", it.text);
+      btn.setAttribute("aria-pressed", String(i === active));
+      btn.addEventListener("click", () => { active = active === i ? -1 : i; altsOpen = false; render(); });
+      card.append(btn);
+      if (i === active) card.append(buildCard(it, to));
+      itemsEl.append(card);
+    });
+  }
+  toEl.addEventListener("change", render);
+  render();
+</script>
+</body>
+</html>
